@@ -1,0 +1,49 @@
+.projects-hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:120px 0 80px;
+}
+
+.projects-hero-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+.projects-left h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin:20px 0;
+}
+
+.projects-left span{
+    color:#7c5cff;
+}
+
+.projects-left p{
+    max-width:560px;
+    color:#b8b8c5;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.projects-right{
+    position:relative;
+    height:500px;
+}
+
+.floating-card{
+    position:absolute;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    backdrop-filter:blur(20px);
+    padding:24px;
+    width:220px;
+}
