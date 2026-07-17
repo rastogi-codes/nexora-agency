@@ -152,3 +152,58 @@
     font-size: 19px;
 }
 
+/* ==========================================
+   MOBILE NAVBAR
+========================================== */
+
+@media (max-width: 768px){
+
+    .menu-button{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .nav-button{
+        display:none;
+    }
+
+    .nav-links{
+
+        position:fixed;
+
+        top:82px;
+        left:0;
+
+        width:100%;
+
+        background:#0b0d1d;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:30px;
+
+        padding:35px;
+
+        transform:translateY(-120%);
+
+        opacity:0;
+
+        visibility:hidden;
+
+        transition:.35s ease;
+    }
+
+    .nav-links.active{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+        visibility:visible;
+
+    }
+
+}

@@ -694,3 +694,30 @@ function revealOnScroll(){
 window.addEventListener("scroll",revealOnScroll);
 
 revealOnScroll(); 
+
+
+// MOBILE NAVIGATION
+
+
+const menuButton = document.getElementById("menuButton");
+const navLinks = document.querySelector(".nav-links");
+
+if (menuButton && navLinks) {
+
+    menuButton.addEventListener("click", () => {
+
+        navLinks.classList.toggle("active");
+
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navLinks.classList.remove("active");
+
+        });
+
+    });
+
+} 
